@@ -30,14 +30,14 @@
     </bean>
     
     <!-- 消息生产者 -->
-    <bean id="producer" class="com.zhaiyz.activemq.Producer">
+    <bean id="producer" class="com.coldboold.activemq.Producer">
         <property name="jmsTemplate" ref="jmsTemplate" />
         <property name="requestDestination" ref="requestDestination" />
         <property name="replyDestination" ref="replyDestination" />
     </bean>
     
     <!-- 消息消费者 -->
-    <bean id="consumer" class="com.zhaiyz.activemq.Consumer">
+    <bean id="consumer" class="com.coldboold.activemq.Consumer">
     	<property name="jmsTemplate" ref="jmsTemplate" />
     </bean>
     
